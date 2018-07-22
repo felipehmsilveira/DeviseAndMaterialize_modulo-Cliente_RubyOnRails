@@ -28,8 +28,16 @@
   </div>
 </div>
 
-<div class="link-devise">
-  <div class="sign_in">
-    <%= render "devise/shared/links" %>
+
+<footer class="page-footer" id="footer-custom">
+  <div class="footer-copyright">
+    <div class="container">
+      <div style="width: 100%;">
+      <div style="left: 0;">
+      	<%= link_to "Back", :back, class: 'waves-effect waves-light btn'  %>
+      	<%= link_to "Log in", new_session_path(resource_name), class: 'waves-effect waves-light btn'   %>
+      </div>
   </div>
-</div>
+    </div>
+  </div>
+</footer> 

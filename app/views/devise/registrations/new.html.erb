@@ -12,33 +12,39 @@
       
       <h4>Sign up</h4>
 
-      <div class="field">
-        <%= f.label :email %><br />
-        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
-      </div>
 
-      <div class="field">
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
-        <%= f.password_field :password, autocomplete: "off" %>
-      </div>
-
-      <div class="field">
-        <%= f.label :password_confirmation %><br />
-        <%= f.password_field :password_confirmation, autocomplete: "off" %>
+      <div class="form collection">
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+          <%= f.email_field :email, autofocus: true, autocomplete: "email", placeholder: 'Email'  %></span>
+          <div style="width: 25px;">Email</div>
+        </a>  
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+         
+        <%= f.password_field :password, autocomplete: "off", placeholder: 'Minimum 6 characters' %> </span>
+          <div style="width: 25px;">Pasword</div>
+        </a> 
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+          <%= f.password_field :password_confirmation, autocomplete: "off", placeholder: 'Minimum 6 characters'  %> </span>
+          <div style="width: 25px;">Password Confirm</div>
+        </a> 
       </div>
 
       <div class="waves-effect waves-light btn">
         <%= f.submit "Sign up" %>
       </div>
+
     <% end %>
   </div>
 </div>
 
-<div class="link-devise">
-  <div class="sign_in">
-    <%= render "devise/shared/links" %>
+<footer class="page-footer" id="footer-custom">
+  <div class="footer-copyright">
+    <div class="container">
+      <div style="width: 100%;">
+      <div style="left: 0;">
+        <%= link_to "Back", :back, class: 'waves-effect waves-light btn'  %>
+      </div>
   </div>
-</div>
+    </div>
+  </div>
+</footer> 
