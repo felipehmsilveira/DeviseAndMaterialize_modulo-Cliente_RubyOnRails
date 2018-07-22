@@ -52,3 +52,34 @@
 	position: fixed!important; 
 	width: 100%!important;
 }
+
+#cliente:hover {
+	background-color: red;
+}
+
+.block-page {
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.block-form {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.field-col {
+	display: inline-block; 
+	width: 35%; 
+	margin-right: 15px;
+}
+
+a:hover {
+	background-color: inherit!important;
+}
+
+a:visited {
+	background-color: inherit!important;
+}
