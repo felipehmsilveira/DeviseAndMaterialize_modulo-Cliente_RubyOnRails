@@ -1,0 +1,21 @@
+  <footer class="page-footer" id="footer-custom">
+    <div class="footer-copyright">
+      <div class="container">
+  	    <div style="width: 100%;">
+	      <div style="left: 0;">
+            <% if page == 'index' %>
+				<%= link_to 'New Cliente', new_cliente_path, class: 'waves-effect waves-light btn' %>
+			<% elsif page == 'edit' && !cliente.blank? %>
+				<%= link_to 'Back', clientes_path, class: 'waves-effect waves-light btn'  %>
+		        <%= link_to 'Show', cliente, class: 'waves-effect waves-light btn'  %>
+	        <% elsif page == 'show' && !cliente.blank? %>
+	        	<%= link_to 'Back', clientes_path, class: 'waves-effect waves-light btn' %>
+				<%= link_to 'Edit', edit_cliente_path(@cliente), class: 'waves-effect waves-light btn' %>
+			<% elsif page == 'new' && !cliente.blank? %>
+				<%= link_to 'Back', clientes_path, class: 'waves-effect waves-light btn' %>
+	      	<% end %>
+	      </div>
+		</div>
+      </div>
+    </div>
+  </footer> 

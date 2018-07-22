@@ -28,9 +28,10 @@
             <td><%= cliente.cpf %></td>
             <td><%= cliente.email %></td>
             <td><%= cliente.endereco %></td>
-            <td><%= link_to 'Show', cliente %></td>
-            <td><%= link_to 'Edit', edit_cliente_path(cliente) %></td>
-            <td><%= link_to 'Destroy', cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+            <td><%= link_to '<i class="material-icons">visibility</i>'.html_safe, cliente %></td>
+
+            <td><%= link_to '<i class="material-icons">edit</i>'.html_safe, edit_cliente_path(cliente) %></td>
+            <td><%= link_to '<i class="material-icons">delete</i>'.html_safe, cliente, method: :delete, data: { confirm: 'Are you sure?' } %></td>
           </tr>
         <% end %>
       </tbody>
@@ -38,6 +39,10 @@
 
     <br>
 
-    <%= link_to 'New Cliente', new_cliente_path, class: 'waves-effect waves-light btn' %>
+    
   </div>
 </div>
+
+
+
+<%= render 'action', page: 'index'%>

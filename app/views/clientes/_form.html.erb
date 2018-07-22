@@ -17,6 +17,28 @@
       </div>
 
 
+      <div class="form collection">
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+          <%= form.text_field :nome, id: :cliente_nome %></span>
+          <div style="width: 25px;">Nome</div>
+        </a>  
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+          <%= form.text_field :email, id: :cliente_email %> </span>
+          <div style="width: 25px;">Email</div>
+        </a> 
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+          <%= form.text_field :cpf, id: :cliente_cpf %> </span>
+          <div style="width: 25px;">CPF</div>
+        </a> 
+        <a class="collection-item" style="height: 70px;"><span class="span-form-field badge">
+          <%= form.text_field :endereco, id: :cliente_endereco %> </span>
+          <div style="width: 25px;">Endereço</div>
+        </a> 
+      </div>
+
+
+
+<!--
       <div style="width: 100%;">
         <div class="field-col">
            <%= form.label :nome %>
@@ -38,12 +60,13 @@
         </div>
       </div>
 
-      <div class="waves-effect waves-light btn" style="margin-bottom: 10px;">
-        <%= form.submit %>
-      </div>
-
       
+-->    
+    <div class="waves-effect waves-light btn" style="margin-bottom: 10px;">
+      <%= form.submit %>
+    </div>
+
     <% end %>
-    
+
     </div> 
 </div>

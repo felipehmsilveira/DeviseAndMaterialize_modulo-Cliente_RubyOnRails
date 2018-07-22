@@ -17,7 +17,7 @@
 
   <body>
 
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class="light-blue lighten-1" role="navigation" id="navbar">
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo"><!-- LOGO --></a>
 
       <% if user_signed_in? %>
@@ -42,6 +42,8 @@
     </div>
   </nav>
 
+  <div style="height: 1px; margin-top: 65px;"></div>
+
   <div style="width: 100%;">
     <div class="align-center" style="width: 20%;">
       <p class="notice" style="color: red;"><%= notice %></p>
@@ -55,7 +57,7 @@
   <%= yield %>
 
 
-
+<!--
   <footer class="page-footer" id="footer-custom">
    
     <div class="footer-copyright">
@@ -65,5 +67,6 @@
       </div>
     </div>
   </footer> 
+-->
   </body>
 </html>

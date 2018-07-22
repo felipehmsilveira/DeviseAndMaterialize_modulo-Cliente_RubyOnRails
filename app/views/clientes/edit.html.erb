@@ -6,17 +6,6 @@
 
 <%= render 'form', cliente: @cliente %>
 
-<div style="width: 100%;">
-  <div class="align-center">
-      <div class="waves-effect waves-light btn" style="margin-bottom: 10px;">
-         <%= link_to 'Show', @cliente %>
-      </div>
-      <div class="waves-effect waves-light btn" style="margin-bottom: 10px;">
-         <%= link_to 'Back', clientes_path %>
-      </div>
-     
-	  
-  </div>
-</div>	
 
+<%= render 'action', page: 'edit', cliente: @cliente%>
 

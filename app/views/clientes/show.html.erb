@@ -1,24 +1,11 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Nome:</strong>
-  <%= @cliente.nome %>
-</p>
+  <div class="show collection">
+    <a href="#!" class="collection-item"><span class="badge"><%= @cliente.nome %></span>Nome</a>
+    <a href="#!" class="collection-item"><span class="badge"><%= @cliente.cpf %></span>CPF</a>
+    <a href="#!" class="collection-item"><span class="badge"><%= @cliente.email %></span>Email</a>
+    <a href="#!" class="collection-item"><span class="badge"><%= @cliente.endereco %></span>Endereço</a>
+  </div>
 
-<p>
-  <strong>Cpf:</strong>
-  <%= @cliente.cpf %>
-</p>
 
-<p>
-  <strong>Email:</strong>
-  <%= @cliente.email %>
-</p>
-
-<p>
-  <strong>Endereco:</strong>
-  <%= @cliente.endereco %>
-</p>
-
-<%= link_to 'Edit', edit_cliente_path(@cliente) %> |
-<%= link_to 'Back', clientes_path %>
+<%= render 'action', page: 'show', cliente: @cliente%>
