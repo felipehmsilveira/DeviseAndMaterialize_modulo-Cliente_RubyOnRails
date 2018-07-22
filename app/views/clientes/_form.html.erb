@@ -2,7 +2,8 @@
   <div class="block-form">
 
     <%= form_with(model: cliente, local: true) do |form| %>
-      <% if cliente.errors.any? %>
+      <div style="width: 100%;">
+        <% if cliente.errors.any? %>
         <div id="error_explanation">
           <h2><%= pluralize(cliente.errors.count, "error") %> prohibited this cliente from being saved:</h2>
 
@@ -13,6 +14,8 @@
           </ul>
         </div>
       <% end %>
+      </div>
+
 
       <div style="width: 100%;">
         <div class="field-col">
